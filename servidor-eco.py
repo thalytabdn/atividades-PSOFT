@@ -21,10 +21,11 @@ while True:
         mensagem = cliente.recv(1024).decode('utf-8') #armazena os dados de entrada em dados(buffer), de tamanho 1024 bytes
         if not mensagem: break
         resposta = "> " + mensagem
+        print(mensagem.rstrip("\n"))
         cliente.send(resposta.encode('utf-8'))
-        if mensagem.strip() == "FIM":
-            break
+        if mensagem.strip() == "FIM": break
     cliente.close()
     print('Cliente desconectou')
 
+#Fecha o socket
 socket.close()
