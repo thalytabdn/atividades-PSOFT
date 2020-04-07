@@ -1,20 +1,22 @@
 import socket
 from threading import Thread
 
-def atende_cliente(client, num_cliente):
+
+def atende_cliente(cliente, num_cliente):
     print('atendendo cliente...')
-    client.send('Servidor de eco (cliente {}).\n'.format(num_cliente).encode('utf-8'))
+    cliente.send('Servidor de eco (cliente {}).\n'.format(num_cliente).encode('utf-8'))
     while True:
-        mensagem = client.recv(1024).decode('utf-8')
+        mensagem = cliente.recv(1024).decode('utf-8')
         if not mensagem: break
         resposta = "> " + mensagem
         print(mensagem.rstrip("\n"))
-        client.send(resposta.encode('utf-8'))
+
+        cliente.send(resposta.encode('utf-8'))
         if mensagem.strip() == "FIM": break
-    client.close()
+    cliente.close()
     print("Cliente desconectou")
 
-
+                                                                  
 def main():
     listen_socket = socket.socket()
 
