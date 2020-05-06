@@ -1,0 +1,16 @@
+{
+    "colors": [
+        {"pt": "branco", "en": "white"},
+        {"pt": "preto", "en": "black"},
+        {"pt": "vermelho", "en": "red"},
+        {"pt": "verde", "en": "green"},
+        {"pt": "amarelo", "en": "yellow"},
+        {"pt": "laranja", "en": "orange"},
+        {"pt": "azul", "en": "blue"},
+        {"pt": "rosa", "en": "pink"},
+        {"pt": "roxo", "en": "purple"},
+        {"pt": "cinza", "en": "grey"},
+        {"pt": "marrom", "en": "brown"},
+        
+    ]
+}
