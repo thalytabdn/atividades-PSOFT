@@ -18,7 +18,7 @@
 >Projeto desenvolvido utilizando HTML e JavaScript, onde o usuário irá informar um valor para altura e outro para o peso, e a partir deles seŕa retornado o valor do IMC.
 
 TCP-IP
->Projeto desenvolvido usando a api de sockets de Python para criar single threaded, e servidor de eco. 
+>Projeto desenvolvido usando a api de sockets de Python para criar chat multi-threaded, single threaded e servidor de eco. 
 
 
 
